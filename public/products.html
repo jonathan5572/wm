@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+  <div class="container mx-auto p-4">
+    <h1 class="text-3xl font-bold mb-4">Products</h1>
+    <nav class="mb-4">
+      <ul class="space-y-2">
+        <li><a class="text-blue-500" href="/">Home</a></li>
+        <li><a class="text-blue-500" href="/orders.html">Orders</a></li>
+        <li><a class="text-blue-500" href="/products.html">Products</a></li>
+        <li><a class="text-blue-500" href="/locations.html">Locations</a></li>
+        <li><a class="text-blue-500" href="/picklists.html">Picklists</a></li>
+        <li><a class="text-blue-500" href="/shipping.html">Shipping</a></li>
+      </ul>
+    </nav>
+    <div id="products-content">
+      <h2 class="text-2xl font-bold mb-2">Sync Products with Shopify</h2>
+      <form id="products-form" class="mb-4">
+        <input type="text" id="product-id" placeholder="Product ID" class="p-2 border rounded">
+        <button type="submit" class="bg-blue-500 text-white p-2 rounded">Sync Products</button>
+      </form>
+      <div id="products-list" class="space-y-2">
+        <!-- List of products will be dynamically added here -->
+      </div>
+    </div>
+  </div>
+  <script>
+    // JavaScript for syncing products with Shopify
+    document.getElementById('products-form').addEventListener('submit', function(event) {
+      event.preventDefault();
+      const productId = document.getElementById('product-id').value;
+      // Add code to handle syncing products with Shopify
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shipping</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+  <div class="container mx-auto p-4">
+    <h1 class="text-3xl font-bold mb-4">Shipping</h1>
+    <nav class="mb-4">
+      <ul class="space-y-2">
+        <li><a class="text-blue-500" href="/">Home</a></li>
+        <li><a class="text-blue-500" href="/orders.html">Orders</a></li>
+        <li><a class="text-blue-500" href="/products.html">Products</a></li>
+        <li><a class="text-blue-500" href="/locations.html">Locations</a></li>
+        <li><a class="text-blue-500" href="/picklists.html">Picklists</a></li>
+        <li><a class="text-blue-500" href="/shipping.html">Shipping</a></li>
+      </ul>
+    </nav>
+    <div id="shipping-content">
+      <h2 class="text-2xl font-bold mb-2">Generate Shipping Labels</h2>
+      <form id="shipping-form" class="mb-4">
+        <input type="text" id="picklist-id" placeholder="Picklist ID" class="p-2 border rounded">
+        <button type="submit" class="bg-blue-500 text-white p-2 rounded">Generate Shipping Label</button>
+      </form>
+      <div id="shipping-list" class="space-y-2">
+        <!-- List of shipping labels will be dynamically added here -->
+      </div>
+    </div>
+  </div>
+  <script>
+    // JavaScript for generating shipping labels
+    document.getElementById('shipping-form').addEventListener('submit', function(event) {
+      event.preventDefault();
+      const picklistId = document.getElementById('picklist-id').value;
+      // Add code to handle generating shipping labels
+    });
+  </script>
+</body>
+</html>

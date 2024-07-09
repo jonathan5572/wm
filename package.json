@@ -1,0 +1,22 @@
+{
+    "name": "warehouse-management",
+    "version": "1.0.0",
+    "description": "A warehouse management system",
+    "main": "server.js",
+    "scripts": {
+      "start": "node server.js",
+      "dev": "nodemon server.js"
+    },
+    "dependencies": {
+      "axios": "^0.21.1",
+      "body-parser": "^1.19.0",
+      "express": "^4.17.1",
+      "html-pdf": "^2.2.0",
+      "mongoose": "^5.12.3"
+    },
+    "devDependencies": {
+      "nodemon": "^2.0.7"
+    },
+    "author": "",
+    "license": "ISC"
+  }
